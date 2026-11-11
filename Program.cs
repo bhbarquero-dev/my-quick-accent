@@ -20,18 +20,19 @@ internal static class Program
 internal sealed class AccentApp : ApplicationContext
 {
     // ── Opciones por tecla. El orden define el número: la primera es el 1. ──
+    // Mismo orden que macOS con teclado en inglés (EE. UU.).
     // Para cambiar o agregar, edite esta tabla (la clave es la tecla, en mayúscula).
     private static readonly Dictionary<char, string> Accents = new()
     {
-        ['A'] = "áàäâãåæā",
-        ['E'] = "éèëêēėę",
-        ['I'] = "íìïîīį",
-        ['O'] = "óòöôõøœō",
-        ['U'] = "úüùûū",
+        ['A'] = "àáâäæãåā",
+        ['E'] = "èéêëēėę",
+        ['I'] = "îïíīįì",
+        ['O'] = "ôöòóœøōõ",
+        ['U'] = "ûüùúū",
         ['N'] = "ñń",
         ['C'] = "çćč",
         ['S'] = "ßśš",
-        ['Y'] = "ýÿ",
+        ['Y'] = "ÿ",
         ['L'] = "ł",
         ['Z'] = "žźż",
     };
